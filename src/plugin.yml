@@ -1,0 +1,5 @@
+name: ItemRestrict
+version: 0.0.1
+author: MCMastery
+description: Restricts the ability to craft certain items
+main: com.dgrissom.itemrestrict.ItemRestrict
