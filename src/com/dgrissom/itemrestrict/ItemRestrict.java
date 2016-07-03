@@ -20,7 +20,8 @@ public class ItemRestrict extends JavaPlugin implements Listener {
     }
 
     public static boolean hasCraftPermission(Player player, ItemStack item) {
-        return player.hasPermission("itemrestrict.craft." + item.getType().name().toLowerCase());
+        return player.hasPermission("itemrestrict.craft.*") || player.hasPermission("itemrestrict.*")
+                || player.hasPermission("itemrestrict.craft." + item.getType().name().toLowerCase());
     }
 
     @EventHandler
